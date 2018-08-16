@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <!-- Bosstrap Style -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Backgroung Image -->
+    <div class="background">
+
+        <!-- Collapseable navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+
+                    <!-- Button -->
+                    <button type="button" class="navbar-toggle bg-yellow" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">WebSiteName</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <!-- Navigation Links -->
+                        <li>
+                            <a href="#home" class="p-font">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#more" class="p-font">Services</a>
+                        </li>
+
+                        <li>
+                            <a href="#portfolio" class="p-font">Portfolio </a>
+                        </li>
+
+                        <li>
+                            <a href="#about" class="p-font">About </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact" class="p-font">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="head" id="home">
+            <h1 class="h-size h-font">Welcome to our studio</h1>
+            <h2 class="h-font">IT'S NICE TO MEET YOU</h2>
+            <a href="#more" class="p-font">Tell Me More</a>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div class="container-fluid marg-top">
+        <h2 class="text-center h-font font-size" id="more">Services</h2>
+        <p class="text-center para-grey p-font">Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <div class="container-fluid center marg-top2  text-center">
+        <div class="row margin">
+            <div class="col-md-4">
+                <span class="glyphicon glyphicon-shopping-cart marg-top2"></span>
+                <h2 class="under h-font ">E-commerce</h2>
+                <p class="para-grey p-font p-">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta
+                impedit.</p>
+            </div>
+            <div class="col-md-4">
+                    <span class="glyphicon glyphicon-phone marg-top2"></span>
+                <h2 class="under h-font ">Responsive Design</h2>
+                <p class="para-grey p-font p-">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta
+                impedit.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="glyphicon glyphicon-lock marg-top2"></span>
+                <h2 class="under h-font ">Web Security</h2>
+                <p class="para-grey p-font p-">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta
+                impedit.</p>    
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Portfolio -->
+    <div class="container-fluid  marg-top bg-grey">
+        <h1 class="text-center marg-top h-font font-size" id="portfolio">Portfolio</h1>
+        <p class="text-center para-grey p-font">Lorem ipsum dolor sit amet consectetur.</p>
+
+
+        <!-- Images first row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                    <img src="Images/portfolio/upwork-logo.png" alt="" class="img-responsive" width="100%">
+                    <a href="upwork/public/index.html" class="link center-block">Upwork Page</a>
+                    <p class="text-center para-grey p-font">Upwork HomePage Replica</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="Images/portfolio/card.jpg" alt="" class="img-responsive" width="100%">
+                        <a href="Card Game/Public/index.html" class="link center-block">Card Game</a>
+                        <p class="text-center para-grey p-font">Can You Guess The Black Card?</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="Images/portfolio/e-commerce.png" alt="" class="img-responsive" width="100%">
+                        <a href="e-commerce/public/index.html" class="link center-block">E-commerce</a>
+                        <p class="text-center para-grey p-font">E-commerce Web For Practice</p>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Contact -->
+    <div class="container-fluid background2 marg-top text-center" id="contact">
+        <h2 class="h-font c-head marg-top2">Contact Us</h2>
+        <p class="p-font para-grey">Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <form onclick="return ">
+                <div class="form-group">
+                    <input type="text" class="form-control height" placeholder="Your Name*">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control form-marg-top height" placeholder="Your Email*">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control form-marg-top height" placeholder="Phone Number*">
+                </div>
+            
+            </div>
+            <div class="col-md-6">
+                <textarea name="message"  class="form-control" cols="30" rows="9" placeholder="Your Message*"></textarea>
+            </div>
+        </div>
+        <div>
+            <input type="submit" class="btn btn-default button" disabled>
+        </div>
+            </form>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

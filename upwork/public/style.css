@@ -1,0 +1,303 @@
+
+@import url('https://fonts.googleapis.com/css?family=Song+Myung'); /* Font For Heading */
+@import url('https://fonts.googleapis.com/css?family=PT+Sans'); /* Font For Paragraph */
+/* other styling */
+body{
+    margin: 0;
+}
+body h1{
+    font-family:  'Song Myung', serif;;
+}
+body p {
+    font-family: 'PT Sans', sans-serif;
+}
+.box{
+    width: 24%;
+    height: 180px;
+    border: 1px solid lightgray;
+    text-align: center;
+    display: inline-block;
+}
+.box p {
+    font-weight: bold;
+}
+.box img{
+    margin-top: 20px;
+}
+.box-2{
+    width: 49%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 70px;
+    text-align: center;
+    margin-top: 50px;
+}
+.box-2 p{
+    color: rgb(117, 116, 116)
+}
+.input-group{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container{
+    margin-top: 150px;
+    background-color: #f9f9f9;
+}
+.text-center{
+    text-align: center;
+}
+.pad-top{
+    padding-top: 60px;
+}
+/***************************************************/
+
+
+/************ Navbar header ********************/
+#navbar-header{
+    background-color:#fff;
+    min-height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+#navbar-header img{
+    vertical-align : middle;
+    margin-left : 20px;
+}
+#navbar-header select{
+    margin-top: 15px;
+    margin-left: 40px;
+    padding: 10px 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#header-content{
+    list-style-type: none;
+    float : right;
+    line-height: 40px;
+}
+#header-content li {
+    display : inline-block;
+    padding-right : 40px;
+    cursor: pointer;
+}
+#header-content li:hover{
+    text-decoration: underline;
+}
+#header-content li button{
+    padding: 8px 18px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid #37a000;
+    background-color: #37a000;
+    cursor: pointer
+}
+#header-content li button:hover{
+    box-shadow: -1px -1px 5px #296409;
+    background-color: #38a000d0;
+}
+/****************************************************************/
+
+
+
+/************ Menu Bar ****************/
+#menu-bar{
+    background-color: #ecf0f1;
+    height: 30px;
+    margin-top: 100px;
+}
+#menu-bar ul{
+    list-style-type: none;
+    text-align : center;
+    padding: 0;
+}
+#menu-bar ul li{
+    display: inline-block; 
+    font-size: 14px;
+    font-weight: bold; 
+    padding-right: 30px; 
+    cursor: pointer;
+}
+#menu-bar ul li:hover{
+    text-decoration: underline;
+}
+#menu-icon{
+    float: right;
+    margin-top: 15px;
+    display: none;
+    cursor: pointer;
+}
+
+/************************************************/
+
+
+
+/* Body Section */
+#main-content{
+    background-image: url("images/bg-image.jpeg");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+#body-content{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    margin-left: 30px;
+
+}
+#body-content h1{
+    font-size: 45px;
+}
+#body-content p{
+    font-size: 18px;
+    font-weight: bold;
+}
+#body-content input[type="text"]{
+    padding: 13px 15px 13px 5px;
+    flex: 3;
+}
+#body-content input[type="button"]{
+    border: 1px solid #37a000;
+    background-color:  #37a000;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    padding : 11px 22px;
+    flex: 1;
+    cursor: pointer; 
+}
+#body-content input[type="button"]:hover{
+    box-shadow: -1px -1px 5px #296409;
+    background-color: #38a000d0;
+}
+
+/**************************************************/
+
+
+
+/******************** Category Section **************/
+
+#category-section h1{
+    text-align: center;
+    font-size: 40px;
+}
+#get-btn{
+    margin-top: 50px;
+    border: 1px solid lightgray;
+    background-color: white;
+    color: green;
+    padding: 7px 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+#get-btn:hover{
+    border: 1px solid green;
+    box-shadow: -1px -1px 5px #296409;
+    background-color: #37850dd0;
+    color: white;
+}
+
+/*****************************************************/
+
+
+/* Footer Styling */
+
+#footer{
+    background-color: #37a000;
+    height: 30vh;
+}
+#footer h1{
+    text-align : center;
+    padding-top: 50px;
+    font-size: 40px;
+    color: white;
+}
+#footer div{
+    text-align: center;
+}
+#footer button{
+    padding: 6px 30px;
+    border: 2px solid transparent;
+    background-color: rgba(255, 255, 255, 0.61);
+    font-size: 17px;
+    cursor: pointer;
+}
+#footer button:hover{
+    background-color: #fff;
+}
+/* Media Queries For for devices less than 990px */
+@media (max-width: 990px){
+    #navbar-header{
+        position: relative;
+    }
+    #navbar-header select{
+        display: none;
+    }
+    #header-content li{
+        display: block;
+    }
+    #header-content{
+        display: none;
+        margin-top: 0;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    #menu-bar{
+        display: none;
+    }
+    #menu-icon{
+        display: inline-block;
+    }
+}
+
+
+/* Media Queries For for devices less than 650px */
+@media (max-width: 650px){
+    .box{
+        width: 48%
+    }
+    #body-content input[type="text"]{
+        display: none;
+    }
+    #body-content input[type="button"]{
+        margin-right : 30px;
+    }
+    #body-content h1 , #body-content p{
+        text-align : center;
+    }
+    #category-section h1{
+        font-size:30px;
+    }
+    .box-2{
+        width: 100%
+    }
+}
+
+
+/* Media Queries For for devices less than 400px */
+@media (max-width : 400px){
+    #body-content h1{
+        font-size: 35px;
+    }
+    #category-section h1{
+        font-size:22px;
+    }
+    .box p{
+        font-size: 13px;
+    }
+    .box img{
+        width: 60px;
+    }
+    #footer{
+        height: 40vh;
+    }    
+    #footer h1{
+        font-size: 35px;
+    }
+}
